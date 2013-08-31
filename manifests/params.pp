@@ -6,6 +6,11 @@ class hubot::params {
                   ]
       $npm_packages = ['coffee-script']
       $service_name = 'hubot'
+    },
+    /RedHat|CentOS/: {
+      $packages = ['git', 'redis']
+      $npm_packages = ['coffee-script']
+      $service_name = 'hubot'
     }
   }
   
